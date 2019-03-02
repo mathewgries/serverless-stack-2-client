@@ -60,16 +60,23 @@ class BillingForm extends Component {
                     />
                 </FormGroup>
                 <hr />
-                <FormGroup bsSize='large' controlId='name'>
-                    <ControlLabel>Name</ControlLabel>
-                    <CardElement
-                        className='card-field'
-                        onChange={this.handleCardFieldChange}
-                        style={{
-                            base: { fontSize: '18px', fontFamily: '"Open Sans", sand-serif' }
-                        }}
+                <FormGroup bsSize="large" controlId="name">
+                    <ControlLabel>Cardholder&apos;s name</ControlLabel>
+                    <FormControl
+                        type="text"
+                        value={this.state.name}
+                        onChange={this.handleFieldChange}
+                        placeholder="Name on the card"
                     />
                 </FormGroup>
+                <ControlLabel>Credit Card Info</ControlLabel>
+                <CardElement
+                    className="card-field"
+                    onChange={this.handleCardFieldChange}
+                    style={{
+                        base: { fontSize: "18px", fontFamily: '"Open Sans", sans-serif' }
+                    }}
+                />
                 <LoaderButton
                     block
                     bsSize='large'
