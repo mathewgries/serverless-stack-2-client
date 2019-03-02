@@ -1,5 +1,4 @@
-export default {
-  MAX_ATTACHMENT_SIZE: 5000000,
+const dev = {
   s3: {
     REGION: "us-east-1",
     BUCKET: "notes-app-2-api-dev-attachmentsbucket-td94aqr3rxim"
